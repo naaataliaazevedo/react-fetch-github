@@ -1,5 +1,4 @@
 import React from 'react';
-import Followers from './followers';
 
 export class User extends React.Component {
   render() {
@@ -12,7 +11,6 @@ export class User extends React.Component {
               <p>{user.login}</p>
               <img src={user.avatar_url} alt={user.login} />
               <a href={user.html_url}>Github</a>
-              <Followers user={user} />
             </div>
           );
         })}
