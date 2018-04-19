@@ -22,11 +22,11 @@ export class User extends React.Component {
           <p>{data.data.name}</p>
           <p>{data.data.bio}</p>
           <img src={data.data.avatar_url} alt={data.data.name} className="img-user" />
-          <Followers data={data} />
           <Router>
             <Link to="/b"> asdasdasd</Link>
           </Router>
         </div>
+        <Followers data={data} />
       </section>
     );
   }
