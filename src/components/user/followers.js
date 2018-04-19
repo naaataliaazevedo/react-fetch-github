@@ -34,6 +34,7 @@ export class Followers extends React.Component {
     const boxFollowing = {
       width: '50%',
       float: 'left',
+      margin: '4rem 0',
     };
   
     const internalBoxFollowing = {
