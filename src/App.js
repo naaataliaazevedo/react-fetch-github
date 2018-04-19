@@ -27,7 +27,6 @@ class App extends Component {
   render() {
     const data = this.state;
     if (!data) {
-      // console.log('dataa', data);
       return (<div>loading</div>);
     }
 
