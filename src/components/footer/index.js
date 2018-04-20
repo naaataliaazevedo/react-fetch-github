@@ -1,10 +1,12 @@
-import React from 'react';
-
+import React from "react";
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 export class Footer extends React.Component {
   render() {
     return (
       <section className="container-footer">
-        <div>footer</div>
+        <Router>
+          <Link to="/asdasdad" target="_blank">asdasdasd</Link>
+        </Router>
       </section>
     );
   }
