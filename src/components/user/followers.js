@@ -34,18 +34,28 @@ export class Followers extends React.Component {
     const boxFollowing = {
       width: '50%',
       float: 'left',
-      margin: '4rem 0',
+      margin: '1rem 0',
     };
-  
+    
+    const titleFollow = {
+      textAlign: 'center',
+      fontWeight:'bold',
+    };
+
     const internalBoxFollowing = {
-      width: '20rem',
+      width: '12rem',
       margin: '0 auto',
     };
 
     const imgFollow = {
-      width: '20rem',
-      height: '20rem',
+      width: '12rem',
+      height: '12rem',
       borderRadius: '50%',
+    };
+
+    const iconCenter = {
+      display: 'block',
+      margin: '0 auto',
     };
 
     return (
@@ -55,11 +65,11 @@ export class Followers extends React.Component {
             return (
               <div key={follow.id} style={boxFollowing}>
                 <div style={internalBoxFollowing}>
-                  <p>{follow.login}</p>
+                  <h3 style={titleFollow}>{follow.login}</h3>
                   <img src={follow.avatar_url} style={imgFollow} alt={follow.id} />
                   <Router>
                     <Link to={follow.html_url} target="_blank">
-                      <img src={github} alt="GitHub" />
+                      <img src={github} alt="GitHub" style={iconCenter} />
                     </Link>
                   </Router>
                 </div>
